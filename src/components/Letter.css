@@ -17,18 +17,6 @@
   perspective: 1000px; /* gives a subtle 3D feel */
 }
 
- 
-
- 
-
-
-
-
-
-
-
-
-
 .penguin {
   width: 140px;
   height: 140px;
@@ -60,6 +48,7 @@
   box-shadow: 0 6px 14px rgba(0,0,0,0.12);
   will-change: transform, opacity;
 }
+
 .penguin-body {
   font-size: 3.6rem;
   line-height: 1;
@@ -76,15 +65,13 @@
 } 
 
 .letter {
-  position: absolute;
-  width: calc(var(--env-width) + 24px);
-  max-width: 90vw;
-  left: 50%;
-  top: 50%;
-  transform: translate3d(-50%, -50%, 0); /* centered */
+  position: relative; /* changed from absolute for responsiveness */
+  width: 90%;
+  max-width: 430px;
+  margin: 0 auto;
   z-index: 20;
   overflow: visible;
-  pointer-events: none; /* outer wrapper should not block clicks */
+  pointer-events: none;
 }
 
 .letter-card {
@@ -101,6 +88,8 @@
   transition: transform 400ms cubic-bezier(0.22, 1, 0.36, 1), opacity 250ms ease;
   overflow: visible;
   cursor: auto;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .letter-card:hover { box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12); }
@@ -147,24 +136,24 @@
 } 
 
 .letter-heading {
-  font-size: 26px;  /* Increased font size */
+  font-size: 26px;
   font-weight: bold;
-  color: #b99210; /* Soft teal heading */
+  color: #b99210;
   text-align: center;
 }
 
 .letter-content {
   margin-top: 20px;
-  font-size: 20px;  /* Increased font size */
-  color: #000000; /* Dark gray text for readability */
+  font-size: 20px;
+  color: #000000;
   text-align: justify;
 }
 
 .letter-signature {
-  font-size: 18px;  /* Increased font size */
+  font-size: 18px;
   font-weight: bold;
   margin-top: 20px;
-  color: #b36c1b; /* Soft teal for the signature */
+  color: #b36c1b;
   text-align: left;
 }
 
@@ -185,18 +174,20 @@
   }
 }
 
-/* Responsive Styles (tidy) */
+/* Responsive Styles */
 @media (max-width: 768px) {
-  .letter, .letter-card { max-width: 340px; }
+  .letter, .letter-card { width: 90%; max-width: 340px; }
   .penguin { width: 120px; height: 120px; }
   .penguin-body { font-size: 3rem; }
+  .letter-heading { font-size: 1.2rem; }
+  .letter-content { font-size: 1rem; }
 }
 
 @media (max-width: 480px) {
-  .letter, .letter-card { max-width: 250px; }
+  .letter, .letter-card { width: 95%; max-width: 280px; padding: 20px 16px; }
   .letter p { font-size: 0.9rem; }
   .letter-heading { font-size: 1rem; }
-  .letter-content { font-size: 0.9rem; }
+  .letter-content { font-size: 0.85rem; }
   .penguin { width: 100px; height: 100px; }
   .penguin-body { font-size: 2.4rem; }
 }
