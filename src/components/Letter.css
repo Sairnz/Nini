@@ -67,7 +67,7 @@
 .letter {
   position: relative; /* changed from absolute for responsiveness */
   width: 90%;
-  max-width: 430px;
+  max-width: 450px;
   margin: 0 auto;
   z-index: 20;
   overflow: visible;
