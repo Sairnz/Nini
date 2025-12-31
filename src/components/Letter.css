@@ -1,5 +1,5 @@
 :root {
-  --env-width: 450px;
+  --env-width: 550px; /* increased from 450px */
   --bg: #f7f7f7;
   --teal: #cc9e07;
   --muted: #d1d1d1;
@@ -72,7 +72,7 @@
 .letter {
   position: relative; /* changed from absolute for responsiveness */
   width: 90%;
-  max-width: 450px;
+  max-width: 550px; /* increased width */
   margin: 0 auto;
   z-index: 20;
   pointer-events: none;
@@ -184,7 +184,7 @@
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .letter, .letter-card { width: 90%; max-width: 340px; }
+  .letter, .letter-card { width: 90%; max-width: 450px; }
   .penguin { width: 120px; height: 120px; }
   .penguin-body { font-size: 3rem; }
   .letter-heading { font-size: 1.2rem; }
@@ -192,7 +192,7 @@
 }
 
 @media (max-width: 480px) {
-  .letter, .letter-card { width: 95%; max-width: 300px; padding: 20px 16px; }
+  .letter, .letter-card { width: 95%; max-width: 360px; padding: 20px 16px; }
   .letter-heading { font-size: 1rem; }
   .letter-content { font-size: 0.85rem; }
   .penguin { width: 100px; height: 100px; }
@@ -200,7 +200,7 @@
 }
 
 @media (min-width: 1200px) {
-  .letter, .letter-card { max-width: 450px; }
+  .letter, .letter-card { max-width: 550px; } /* updated width */
   .penguin { width: 170px; height: 170px; }
   .penguin-body { font-size: 4rem; }
   .letter p { font-size: 1.2rem; }

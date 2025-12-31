@@ -224,33 +224,31 @@ const Letter = () => {
             <p className="letter-heading">Nini</p>
 
             <p className="letter-content">
-            Since the moment our paths aligned, <br />
-            Something gentle settled in my days. <br />
-            In calls, in games, in quiet moments, <br />
-            I found a comfort I didn’t know I needed.
-          </p>
+  Since our paths first crossed, <br />
+  there’s been a quiet warmth in my days. <br />
+  In calls, in games, or in the simple moments we share, <br />
+  the time spent together has become something I truly appreciate.
+</p>
 
-          <p className="letter-content">
-            Even in silence, your presence stays, <br />
-            A calm I’ve come to cherish. <br />
-            No matter the distance or the hour, <br />
-            Knowing you’re there is more than enough.
-          </p>
+<p className="letter-content">
+  Even in silence, your presence is grounding. <br />
+  No matter the distance or the hour, <br />
+  knowing we can connect when needed brings a subtle ease to my days.
+</p>
 
-          <p className="letter-content">
-            There’s something about the way you are, <br />
-            Effortless, warm, and quietly inspiring. <br />
-            The time we share means more than I say, <br />
-            And it lingers long after the call ends.
-          </p>
+<p className="letter-content">
+  There’s a natural ease to being around you, <br />
+  a rhythm in our interactions that feels rare. <br />
+  The moments we share leave a lasting impression, <br />
+  lingering quietly after the call ends.
+</p>
 
-          <p className="letter-content">
-            As the year turns and a new one begins, <br />
-            I wish you joy in all its forms. <br />
-            Thank you for the moments we’ve shared, <br />
-            And Happy New Year, Nini.
-          </p>
-
+<p className="letter-content">
+  As the year draws to a close and a new one begins, <br />
+  I hope it brings you meaningful moments, calm, and small joys. <br />
+  Thank you for the time and presence you’ve shared, <br />
+  and Happy New Year, Nini.
+</p>
             <p className="letter-signature">
               Warmly, <br />
               Renren
